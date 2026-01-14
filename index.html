@@ -7,13 +7,18 @@
     <meta name="keywords" content="ICT Manager, Customer Support, Sales Development, SDR, Virtual Assistant, Remote Work, Nigeria">
     <title>Joshua Chinedu - ICT Manager | Sales & Support Professional</title>
     
+    <!-- Favicon - JC Monogram -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPCEtLSBCYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwNjZjYyIgcng9IjQiLz4KICAKICA8IS0tIEpDIFRleHQgLS0+CiAgPHRleHQgeD0iMTYiIHk9IjIyIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5KQzwvdGV4dD4KPC9zdmc+">
+    <!-- Fallback for older browsers -->
+    <link rel="alternate icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIXSURBVFiFxZfPaxNBFMe/M5tNS9KkadLYH1qLWhQEQfDgxYMHBUGPevHgf+BFPHjw4MmTBy8evHjQk4IgCIIgCIJ4EBQFL1pFbU2atE2ySTa7O+POJpvd2d1Nkh/shx3evu/Mm/fezkRIKXGQQh1w/H8ALwBvAAeAC8AFwAbgAPDkfwLwZLkA3Pn8/gBuAK4ANwAHgCv/E4ArfwCu/AFc+QO48gdw5Q/gyh/AlT+AK38AV/4ArvwBXPkDuPIHcOUP4MofwJU/gCt/AFf+AK78AVz5A7jyB3DlD+DKH8CVP4ArfwBX/gCu/AFc+QO48gdw5Q/gyh/AlT+AK38AV/4ArvwBXPkDuPIHcOUP4MofwJU/gCt/AFf+AK78AVz5A7jyB3DlD+DKH8CVP4ArfwBX/gCu/AFc+QO48gdw5Q/gyh/AlT+AK38AV/4ArvwBXPkDuPIHcOUP4MofwJU/gCt/AFf+AK78AVz5A7jyB3DlD+DKH8CVP4ArfwBX/gCu/AFc+QO48gdw5Q/gyh/AlT+AK38AV/4ArvwBXPkDuPIHcOUP4MofwJU/gCt/AFf+AK78AVz5A7jyB3DlD+DKH8CVP4ArfwBX/gCu/AFc+QO48gdw5Q/gyh/AlT+AK38AV/4ArvwBXPkDuPIHcOUP4MofwJU/gCt/AFf+AK78AVz5A7jyB3DlD+DKH8CVP4ArfwBX/gCu/AFc+QO48gdw5Q/gyh/Alf8PwAHgAfgJfwEAAAAASUVORK5CYII=">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
         * {
@@ -731,4 +736,1457 @@
             top: 0;
             left: 0;
             width: 100%;
-   
+            height: 4px;
+            background: var(--primary-blue);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0, 102, 204, 0.15);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--dark-gray);
+        }
+
+        .service-card p {
+            color: var(--medium-gray);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .service-price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            margin-top: 1rem;
+        }
+
+        /* ========== SERVICE MODAL ========== */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-dialog {
+            background: var(--white);
+            max-width: 750px;
+            width: 100%;
+            border-radius: 12px;
+            padding: 3rem;
+            position: relative;
+            animation: slideUp 0.4s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--medium-gray);
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--light-gray);
+        }
+
+        .modal-close:hover {
+            color: var(--primary-blue);
+            background: var(--light-blue);
+        }
+
+        .modal-dialog h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-blue);
+        }
+
+        .modal-dialog p {
+            color: var(--medium-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .modal-dialog h3 {
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+            color: var(--dark-gray);
+        }
+
+        .modal-features {
+            list-style: none;
+            margin: 1rem 0 2rem;
+        }
+
+        .modal-features li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--medium-gray);
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .modal-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--success-green);
+        }
+
+        .modal-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2rem 0 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        /* ========== TESTIMONIALS SECTION ========== */
+        #testimonials {
+            background: var(--white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-gray);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 102, 204, 0.15);
+            border-color: var(--primary-blue);
+        }
+
+        .rating {
+            color: var(--warning-orange);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            color: var(--medium-gray);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-gray);
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .author-details h4 {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+            color: var(--dark-gray);
+        }
+
+        .author-details p {
+            color: var(--medium-gray);
+            font-size: 0.85rem;
+        }
+
+        /* ========== CONTACT SECTION ========== */
+        #contact {
+            background: var(--light-gray);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-gray);
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-detail h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: var(--dark-gray);
+        }
+
+        .contact-detail p,
+        .contact-detail a {
+            color: var(--medium-gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .contact-detail a:hover {
+            color: var(--primary-blue);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+
+        .social-icons a i {
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        /* Fallback for icons if Font Awesome doesn't load */
+        .social-icons a[title]::after {
+            content: '';
+        }
+        
+        .social-icons a i.fab::before {
+            font-family: "Font Awesome 6 Brands";
+            font-weight: 400;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-3px);
+            background: var(--dark-blue);
+            box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+        }
+
+        .qr-section {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-gray);
+        }
+
+        .qr-section h4 {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: var(--dark-gray);
+        }
+
+        .qr-box {
+            width: 180px;
+            height: 180px;
+            background: var(--light-gray);
+            margin: 0 auto;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed var(--border-gray);
+            color: var(--medium-gray);
+            font-size: 0.85rem;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-gray);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-field {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-field label {
+            display: block;
+            margin-bottom: 0.7rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--dark-gray);
+        }
+
+        .form-field input,
+        .form-field textarea {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 2px solid var(--border-gray);
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: var(--white);
+            color: var(--dark-gray);
+        }
+
+        .form-field input:focus,
+        .form-field textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 4px var(--light-blue);
+        }
+
+        .form-field textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .submit-btn:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
+        }
+
+        .success-message {
+            display: none;
+            padding: 1.2rem;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+            background: var(--success-green);
+            color: var(--white);
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: fadeInUp 0.5s ease;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: var(--dark-gray);
+            color: var(--white);
+            text-align: center;
+            padding: 2.5rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Reveal animation - show by default, hide only when JS loads */
+        .reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Only animate if JavaScript successfully loaded */
+        body.js-loaded .reveal:not(.active) {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        body.js-loaded .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease;
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .logo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            /* Keep hero stats in one row on mobile */
+            .hero-stats {
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .stat-item {
+                padding: 0.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .hero .title {
+                font-size: 1.1rem;
+                line-height: 1.5;
+            }
+
+            .hero .tagline {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+            }
+
+            .hero-badge {
+                font-size: 0.85rem;
+                padding: 0.5rem 1.2rem;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .portfolio-grid,
+            .services-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            section {
+                padding: 3rem 5%;
+            }
+
+            .about-content {
+                padding: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 0.9rem 2rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Maintain 3-column grid for stats even on smallest screens */
+            .hero-stats {
+                gap: 0.5rem;
+                padding: 0 0.5rem;
+            }
+
+            .stat-item {
+                padding: 0.3rem;
+            }
+
+            .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .stat-label {
+                font-size: 0.7rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .title {
+                font-size: 1rem;
+            }
+
+            .hero .tagline {
+                font-size: 0.9rem;
+            }
+
+            .cta-group {
+                flex-direction: column;
+                width: 100%;
+                gap: 1rem;
+            }
+
+            .cta-group .btn {
+                width: 100%;
+            }
+
+            .logo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-dialog {
+                padding: 1.5rem;
+            }
+
+            .section-badge {
+                font-size: 0.75rem;
+                padding: 0.3rem 1rem;
+            }
+
+            nav {
+                padding: 0.8rem 5%;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Mark that JavaScript is loading
+        document.body.classList.add('js-loaded');
+        console.log('JavaScript is active');
+    </script>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Joshua Chinedu</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#home" onclick="closeMobileMenu()">Home</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+        <a href="#services" onclick="closeMobileMenu()">Services</a>
+        <a href="#testimonials" onclick="closeMobileMenu()">Testimonials</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                Available for Remote Opportunities
+            </div>
+            <h1>Joshua Chinedu</h1>
+            <p class="title">ICT Manager | Customer Support Leader | Sales Development Representative</p>
+            <p class="tagline">Results-driven professional with 4+ years of experience delivering exceptional customer support, managing IT infrastructure, and driving sales growth for U.S.-based SaaS and enterprise organizations. Specialized in remote operations, CRM optimization, and operational excellence.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Customer Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">120%</span>
+                    <span class="stat-label">Sales Target Achievement</span>
+                </div>
+            </div>
+
+            <div class="cta-group">
+                <a href="#portfolio" class="btn btn-primary">
+                    <span>View Portfolio</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="section-header">
+            <div class="section-badge">About Me</div>
+            <h2 class="section-title">Professional Profile</h2>
+            <p class="section-subtitle">A versatile technology and business professional with proven expertise in ICT management, customer support, sales development, and digital innovation</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-content">
+                <h3>Professional Summary</h3>
+                <p>Joshua Chinedu is a results-driven ICT Manager, Sales Development Representative, and Music Producer with over four years of experience delivering exceptional customer support and technical solutions for U.S.-based SaaS and hospitality organizations. Armed with a B.Eng. in Electrical Engineering and certifications in CompTIA A+, Network+, and HubSpot Sales, I specialize in managing IT infrastructure, optimizing CRM systems, and driving revenue growth through strategic sales outreach.</p>
+
+                <div class="highlight-box">
+                    <strong>Key Differentiator:</strong> Rare blend of technical expertise, sales acumen, and operational leadership. I seamlessly transition from configuring cybersecurity systems and disaster recovery plans to executing 100+ daily sales calls and managing customer support teams that achieve 95%+ satisfaction rates.
+                </div>
+
+                <h3>Career Achievements</h3>
+                <ul class="achievement-list">
+                    <li><strong>Reduced IT system downtime by 40%</strong> through comprehensive infrastructure modernization at BON Hotel</li>
+                    <li><strong>Exceeded sales targets by 120%</strong> while maintaining 100+ daily outbound calls at Good Marketing</li>
+                    <li><strong>Achieved 95% customer satisfaction rate</strong> while supervising remote support operations at BrightLink AV</li>
+                    <li><strong>Improved ticket resolution time by 20%</strong> through workflow optimization and process improvements</li>
+                    <li><strong>Increased email response rates by 25%</strong> through strategic sequencing and personalization</li>
+                    <li><strong>Trained 50+ clients</strong> on technical products and software systems</li>
+                </ul>
+
+                <h3>Education & Certifications</h3>
+                <p><strong>B.Eng. Electrical Engineering</strong> - Madonna University, Nigeria (2018)</p>
+                <ul class="achievement-list">
+                    <li>CompTIA A+ Certified</li>
+                    <li>CompTIA Network+ Certified</li>
+                    <li>HubSpot Sales Software Certification</li>
+                    <li>Google Workspace Productivity Certification</li>
+                    <li>Wavecrest College of Hospitality Graduate</li>
+                </ul>
+            </div>
+
+            <div class="skills-sidebar">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>ICT & Infrastructure</h4>
+                    <p>Network administration, cybersecurity, disaster recovery, HSIA/PMS systems, PABX/IPTV/CCTV management</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Customer Support</h4>
+                    <p>Zendesk, Freshdesk, Intercom, SLA compliance, team supervision, workflow optimization</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h4>Sales Development</h4>
+                    <p>B2B/B2C outreach, cold calling, lead qualification, appointment setting, pipeline management</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>CRM & Tools</h4>
+                    <p>Salesforce, HubSpot, GoHighLevel, Google Workspace, Microsoft 365, Slack, Asana, Trello</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="experience-section">
+            <h3>Professional Experience Highlights</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>ICT Manager | BON Hotel The Pearl Jabi Lake</h4>
+                        <p class="timeline-meta">February 2023 – September 2025 | Hybrid</p>
+                        <p class="timeline-description">Led IT infrastructure operations, cybersecurity implementation, disaster recovery planning, and network management. Reduced system downtime by 40% and established comprehensive ISRM frameworks.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Appointment Setter | Good Marketing (USA)</h4>
+                        <p class="timeline-meta">June 2024 – October 2024 | Remote</p>
+                        <p class="timeline-description">Generated 1+ qualified B2B/B2C signups daily through strategic outbound campaigns. Achieved 120% of monthly sales targets with 100+ daily calls and improved email response rates by 25%.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Customer Support Supervisor | BrightLink AV (USA)</h4>
+                        <p class="timeline-meta">October 2022 – May 2025 | Remote</p>
+                        <p class="timeline-description">Managed inbound calls, tickets, and post-sales support achieving 95% customer satisfaction. Reduced ticket resolution time by 20% and trained 50+ clients on technical products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="reveal">
+        <div class="section-header">
+            <div class="section-badge">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing measurable results and impactful contributions across ICT, sales, and customer support</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop');">
+                    <span class="portfolio-tag">ICT Management</span>
+                </div>
+                <div class="portfolio-body">
+                    <h3>IT Infrastructure Transformation</h3>
+                    <p>Led comprehensive IT modernization for BON Hotel including cybersecurity implementation, disaster recovery planning, and network infrastructure management.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric"><i class="fas fa-check-circle"></i> 40% Downtime Reduction</span>
+                        <span class="metric"><i class="fas fa-shield-alt"></i> ISRM Framework</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2074&auto=format&fit=crop');">
+                    <span class="portfolio-tag">Customer Support</span>
+                </div>
+                <div class="portfolio-body">
+                    <h3>Support Operations Excellence</h3>
+                    <p>Supervised remote support operations for BrightLink AV achieving industry-leading customer satisfaction and operational efficiency.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric"><i class="fas fa-star"></i> 95% Satisfaction Rate</span>
+                        <span class="metric"><i class="fas fa-clock"></i> 20% Faster Resolution</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop');">
+                    <span class="portfolio-tag">Sales Development</span>
+                </div>
+                <div class="portfolio-body">
+                    <h3>B2B/B2C Sales Campaign</h3>
+                    <p>Generated qualified leads through strategic outbound campaigns at Good Marketing, consistently exceeding monthly targets.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric"><i class="fas fa-chart-line"></i> 120% Target Achievement</span>
+                        <span class="metric"><i class="fas fa-envelope-open"></i> 25% Response Rate ↑</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');">
+                    <span class="portfolio-tag">CRM Optimization</span>
+                </div>
+                <div class="portfolio-body">
+                    <h3>CRM System Implementation</h3>
+                    <p>Streamlined Salesforce, HubSpot, and GoHighLevel implementations for SaaS and marketing companies.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric"><i class="fas fa-users"></i> 15% Onboarding Efficiency ↑</span>
+                        <span class="metric"><i class="fas fa-database"></i> Data Accuracy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop');">
+                    <span class="portfolio-tag">Music Production</span>
+                </div>
+                <div class="portfolio-body">
+                    <h3>Creative Services Portfolio</h3>
+                    <p>Produced original tracks and provided professional training to aspiring artists across multiple genres and platforms.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric"><i class="fas fa-music"></i> Original Productions</span>
+                        <span class="metric"><i class="fas fa-graduation-cap"></i> Student Training</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image" style="background-image: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=2074&auto=format&fit=crop');">
+                    <span class="portfolio-tag">Virtual Assistance</span>
+                </div>
+                <div class="portfolio-body">
+                    <h3>Administrative Excellence</h3>
+                    <p>Delivered comprehensive virtual assistance for U.S.-based clients, ensuring seamless operations across time zones.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric"><i class="fas fa-tasks"></i> Multi-client Management</span>
+                        <span class="metric"><i class="fas fa-globe"></i> Global Coordination</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client Logos -->
+        <div class="client-section">
+            <h3>Trusted by Leading Organizations</h3>
+            <div class="logo-grid">
+                <!-- Row 1 -->
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Salesforce" alt="Salesforce"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=HubSpot" alt="HubSpot"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Zendesk" alt="Zendesk"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Microsoft" alt="Microsoft"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Google" alt="Google"></div>
+                
+                <!-- Row 2 -->
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Slack" alt="Slack"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Asana" alt="Asana"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Spotify" alt="Spotify"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=SoundCloud" alt="SoundCloud"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Adobe" alt="Adobe"></div>
+                
+                <!-- Row 3 -->
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=BON+Hotel" alt="BON Hotel"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=BrightLink" alt="BrightLink"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Heropost" alt="Heropost"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=SocialProof" alt="SocialProof"></div>
+                <div class="logo-box"><img src="https://via.placeholder.com/180x80?text=Good+Marketing" alt="Good Marketing"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="reveal">
+        <div class="section-header">
+            <div class="section-badge">Services</div>
+            <h2 class="section-title">Professional Services</h2>
+            <p class="section-subtitle">Comprehensive solutions tailored to drive business growth and operational excellence</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" onclick="showServiceModal('ict')">
+                <div class="service-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>ICT Management & Consulting</h3>
+                <p>Comprehensive IT infrastructure setup, network administration, cybersecurity implementation, and disaster recovery planning for businesses.</p>
+                <p class="service-price">Starting at $50/hour</p>
+            </div>
+
+            <div class="service-card" onclick="showServiceModal('support')">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Customer Support Management</h3>
+                <p>End-to-end customer support operations including ticketing system setup, team training, SLA compliance, and performance optimization.</p>
+                <p class="service-price">Starting at $40/hour</p>
+            </div>
+
+            <div class="service-card" onclick="showServiceModal('sales')">
+                <div class="service-icon">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <h3>Sales Development (SDR)</h3>
+                <p>B2B/B2C lead generation, cold calling campaigns, appointment setting, and pipeline management using HubSpot, Salesforce, and GoHighLevel.</p>
+                <p class="service-price">Starting at $35/hour</p>
+            </div>
+
+            <div class="service-card" onclick="showServiceModal('va')">
+                <div class="service-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>Virtual Assistant Services</h3>
+                <p>Professional administrative support including email management, calendar coordination, data entry, CRM updates, and project documentation.</p>
+                <p class="service-price">Starting at $25/hour</p>
+            </div>
+
+            <div class="service-card" onclick="showServiceModal('music')">
+                <div class="service-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Music Production & Training</h3>
+                <p>One-on-one piano lessons, music production coaching, beat making, mixing/mastering services, and DAW training.</p>
+                <p class="service-price">Starting at $30/hour</p>
+            </div>
+
+            <div class="service-card" onclick="showServiceModal('web')">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Design & Digital Marketing</h3>
+                <p>Website development, SEO optimization, social media management, email marketing campaigns, and AI automation implementation.</p>
+                <p class="service-price">Starting at $45/hour</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-dialog">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="reveal">
+        <div class="section-header">
+            <div class="section-badge">Testimonials</div>
+            <h2 class="section-title">Client Success Stories</h2>
+            <p class="section-subtitle">Trusted by professionals and organizations worldwide</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Joshua transformed our IT infrastructure completely. His attention to cybersecurity and disaster recovery planning gave us peace of mind we never had before. Professional, responsive, and highly knowledgeable."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MO</div>
+                    <div class="author-details">
+                        <h4>Michael Okonkwo</h4>
+                        <p>Operations Director, BON Hotel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Best appointment setter we've worked with. Joshua consistently exceeded targets and brought genuine enthusiasm to every call. His understanding of our product made qualifying leads seamless."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-details">
+                        <h4>Sarah Mitchell</h4>
+                        <p>Sales Director, Good Marketing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Joshua's customer support supervision elevated our entire operation. The workflow improvements he implemented saved us countless hours, and our satisfaction scores have never been higher."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">DC</div>
+                    <div class="author-details">
+                        <h4>David Chen</h4>
+                        <p>CEO, BrightLink AV</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Learning piano and production from Joshua has been incredible. He breaks down complex concepts in ways that just click. Patient, skilled, and genuinely invested in my growth as a musician."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">CA</div>
+                    <div class="author-details">
+                        <h4>Chioma Adeyemi</h4>
+                        <p>Aspiring Music Producer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Joshua doesn't just provide virtual assistance — he anticipates needs and solves problems before they arise. Organized, reliable, and an absolute professional."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JT</div>
+                    <div class="author-details">
+                        <h4>Jennifer Thompson</h4>
+                        <p>Marketing Manager, SocialProof</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="section-header">
+            <div class="section-badge">Contact</div>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Ready to discuss your next project? I'm available for remote opportunities worldwide</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="/cdn-cgi/l/email-protection#e68c89958e938782878495a6818b878f8ac885898b"><span class="__cf_email__" data-cfemail="fc96938f94899d989d9e8fbc9b919d9590d29f9391">[email&#160;protected]</span></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Abuja, FCT, Nigeria</p>
+                            <p>Available for remote work worldwide</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Availability</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM WAT</p>
+                            <p>Flexible for different time zones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h4 style="margin-bottom: 1rem;">Connect on Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/joshua-chinedu-2258aa104" target="_blank" title="LinkedIn" aria-label="LinkedIn" style="position: relative;">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank" title="Facebook" aria-label="Facebook" style="position: relative;">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" title="Instagram" aria-label="Instagram" style="position: relative;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" title="X (Twitter)" aria-label="X Twitter" style="position: relative;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" title="TikTok" aria-label="TikTok" style="position: relative;">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" target="_blank" title="YouTube" aria-label="YouTube" style="position: relative;">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="qr-section">
+                    <h4>Scan QR Code</h4>
+                    <div class="qr-box">
+                        <p>QR Code<br>Placeholder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Optional">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                    <div id="successMessage" class="success-message">
+                        ✓ Thank you for reaching out. I'll be in touch soon!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Joshua Chinedu. All Rights Reserved. | ICT Manager • Customer Support Leader • Sales Development Representative</p>
+    </footer>
+
+    <script>
+        console.log('✓ Portfolio JavaScript Loading...');
+
+        // ===== MOBILE MENU FUNCTIONS =====
+        
+        window.toggleMobileMenu = function() {
+            console.log('Toggle mobile menu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const icon = document.querySelector('.mobile-toggle i');
+            
+            if (!mobileMenu || !icon) {
+                console.error('Mobile menu elements not found');
+                return;
+            }
+            
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                mobileMenu.classList.add('active');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        };
+
+        window.closeMobileMenu = function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const icon = document.querySelector('.mobile-toggle i');
+            
+            if (mobileMenu) mobileMenu.classList.remove('active');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        };
+
+        // ===== IMMEDIATE FUNCTIONS (Available for onclick handlers) =====
+        
+        // Scroll to section function
+        window.scrollToSection = function(sectionId) {
+            console.log('→ Scrolling to:', sectionId);
+            const target = document.getElementById(sectionId);
+            if (target) {
+                const navHeight = 80;
+                const targetPosition = target.offsetTop - navHeight;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        };
+
+        // ===== INITIALIZATION (Runs when DOM is ready) =====
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('✓ DOM Ready - Initializing...');
+            
+            // Initialize reveal animation
+            initRevealAnimation();
+            
+            // Initialize navbar scroll effect
+            initNavbarScroll();
+            
+            // Initialize service modals
+            initServiceModals();
+            
+            // Initialize form
+            initContactForm();
+            
+            console.log('✓ Portfolio Fully Initialized!');
+        });
+
+        // Reveal Animation
+        function initRevealAnimation() {
+            function reveal() {
+                const reveals = document.querySelectorAll('.reveal');
+                reveals.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', reveal);
+            reveal(); // Initial check
+            console.log('✓ Reveal animation initialized');
+        }
+
+        // Navbar Scroll Effect
+        function initNavbarScroll() {
+            window.addEventListener('scroll', function() {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            console.log('✓ Navbar scroll effect initialized');
+        }
+
+        // Service Modal Functions
+        function initServiceModals() {
+            const serviceData = {
+                ict: {
+                    title: 'ICT Management & Consulting',
+                    description: 'Transform your organization with comprehensive IT solutions...',
+                    pricing: 'Starting at $50/hour or $1,500/project'
+                },
+                support: {
+                    title: 'Customer Support Management',
+                    description: 'Elevate your customer experience with world-class support...',
+                    pricing: 'Starting at $40/hour or $3,000/month'
+                },
+                sales: {
+                    title: 'Sales Development (SDR) Services',
+                    description: 'Drive revenue growth with proven sales strategies...',
+                    pricing: 'Starting at $35/hour or $2,500/month'
+                },
+                va: {
+                    title: 'Virtual Assistant Services',
+                    description: 'Streamline your operations with professional support...',
+                    pricing: 'Starting at $25/hour or $1,800/month'
+                },
+                music: {
+                    title: 'Music Production & Training',
+                    description: 'Unlock your musical potential with professional instruction...',
+                    pricing: 'Starting at $30/hour or $200/4-session package'
+                },
+                web: {
+                    title: 'Web Design & Digital Marketing',
+                    description: 'Build your digital presence with modern solutions...',
+                    pricing: 'Starting at $45/hour or $2,000/project'
+                }
+            };
+
+            window.showServiceModal = function(serviceKey) {
+                const modal = document.getElementById('serviceModal');
+                const content = document.getElementById('modalContent');
+                const service = serviceData[serviceKey];
+
+                if (service && content) {
+                    content.innerHTML = `
+                        <h2>${service.title}</h2>
+                        <p>${service.description}</p>
+                        <p class="modal-price">${service.pricing}</p>
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal(); scrollToSection('contact'); return false;">
+                            <span>Get Started</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    `;
+                    modal.classList.add('active');
+                }
+            };
+
+            window.closeModal = function() {
+                const modal = document.getElementById('serviceModal');
+                if (modal) {
+                    modal.classList.remove('active');
+                }
+            };
+
+            console.log('✓ Service modals initialized');
+        }
+
+        // Contact Form
+        function initContactForm() {
+            const form = document.getElementById('contactForm');
+            if (!form) return;
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = {
+                    firstName: document.getElementById('firstName').value,
+                    lastName: document.getElementById('lastName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value || 'Not provided',
+                    message: document.getElementById('message').value
+                };
+
+                const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.firstName} ${formData.lastName}`);
+                const body = encodeURIComponent(`Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`);
+
+                window.location.href = `mailto:joshuadabs@gmail.com?subject=${subject}&body=${body}`;
+
+                document.getElementById('successMessage').classList.add('show');
+                form.reset();
+                
+                setTimeout(function() {
+                    document.getElementById('successMessage').classList.remove('show');
+                }, 5000);
+            });
+
+            console.log('✓ Contact form initialized');
+        }
+    </script>
+</body>
+</html>
